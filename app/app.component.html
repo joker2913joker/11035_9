@@ -1,0 +1,61 @@
+<div class="wrap"> 
+  <div class="container">
+<h1>Template Driven Forms</h1>
+
+<label for="firstname">First Name:</label>
+
+<input type="text"[(ngModel)]="firstName">
+
+<h1 style="text-align: right;"> {{ firstName }}</h1>
+
+<label for="myname">Last Name:</label>
+
+<input type="text" [(ngModel)]="lastName">
+
+<h1 style="text-align: right;"> {{ lastName }}</h1>
+
+<label for="myname">Gender:</label>
+
+<input type="text" [(ngModel)]="gender">
+
+<h1 style="text-align: right;"> {{ gender }}</h1>
+
+<label for="myname">Address:</label>
+
+<input type="text" [(ngModel)]="address">
+
+<h1 style="text-align: right;"> {{ address }}</h1>
+
+<label for="myname">Password:</label>
+
+<input type="text" [(ngModel)]="password">
+
+<h1 style="text-align: right;"> {{ password }}</h1>
+
+<h1>Reactive Forms Job</h1>
+
+<label for="name">Name:</label>
+
+<input type="text" [formControl]="Name">
+
+<h1 style="text-align: right;">{{ Name.value}}</h1>
+
+<label for="lastname">Last Name:</label>
+
+<input type="text" [formControl]="Last">
+
+<h1 style="text-align: right;">{{ Last.value}}</h1>
+
+<label for="ID number">ID number:</label>
+
+<input type="text" [formControl]="id">
+
+<h1 style="text-align: right;">{{ id.value}}</h1>
+
+<label for="Company">Company Name:</label>
+
+<input type="text" [formControl]="Company">
+
+<h1 style="text-align: right;">{{ Company.value}}</h1></div> 
+
+<router-outlet></router-outlet>
